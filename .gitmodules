@@ -1,0 +1,3 @@
+[submodule "Software/Frontend"]
+	path = Software/Frontend
+	url = https://github.com/GuyWithBag/RoomMonitoring-Frontend.git
