@@ -1,5 +1,5 @@
 # RoomMonitoring
-Smart Room Monitoring Device
+Smart Room Monitoring Device: 
 The Smart Room Monitoring Device is an advanced solution designed to improve home automation and environmental monitoring. This innovative device tracks key parameters such as air quality, temperature, humidity, and dust PPM (particles per million), offering users comprehensive insights into their living spaces.
 
 Key Features:
