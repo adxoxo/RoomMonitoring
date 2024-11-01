@@ -7,8 +7,27 @@ from django.db.models import Avg
 # Create your views here.
  
 from .models import Room, RoomParameters
-from .serializers import RoomParameterSerializer, AverageRoomParametersSerializer
+from .serializers import RoomSerializer, RoomParameterSerializer, AverageRoomParametersSerializer
 # Create your views here.
+
+class RoomListedView(ViewSet):
+    
+    def RoomsListed(self, request):
+    
+        listedrooms = Room.objects.filter(listed=True)
+        serializer = RoomSerializer(listedrooms, many=True)
+
+        return Response(serializer.data, status=200)
+
+
+class RoomUnlistedView(ViewSet):
+
+    def RoomsUnlisted(self, request):
+    
+        listedrooms = Room.objects.filter(listed=False)
+        serializer = RoomSerializer(roomsunlisted, many=True)
+
+        return Response(serializer.data, status=200)
 
 class RoomParametersView(ViewSet):
 
